@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-behavior: smooth; [cite_start]/* Adiciona rolagem suave para âncoras */ [cite: 15]
+    scroll-behavior: smooth; /* Adiciona rolagem suave para âncoras */
 }
 
 body {
@@ -114,35 +114,6 @@ section {
     align-items: center;
     justify-content: center;
     text-align: left; /* Alinha o texto do banner à esquerda */
-	/* Responsividade */
-@media (max-width: 992px) {
-    /* ... suas regras existentes para 992px ... */
-
-    .hero-section .hero-content .btn {
-        margin-top: 30px; /* Adiciona um espaço acima do botão no celular */
-        margin-bottom: 20px; /* Garante um espaço abaixo do botão, se for o último elemento da seção de conteúdo */
-    }
-
-    /* ... continue com suas outras regras para 992px ... */
-}
-
-/* As outras media queries continuam normalmente abaixo */
-
-@media (max-width: 768px) {
-    /* ... */
-}
-
-@media (max-width: 480px) {
-    /* ... */
-}
-
-@media (max-width: 420px) {
-    /* ... */
-}
-
-@media (max-width: 360px) {
-    /* ... */
-
 }
 
 .hero-section .container {
@@ -360,32 +331,48 @@ section {
     flex-grow: 1; /* Permite que o parágrafo ocupe o espaço restante */
 }
 
-[cite_start]/* Estilos do Rodapé */ [cite: 16]
-[cite_start]footer .container { [cite: 16]
-    [cite_start]display: flex; [cite: 16]
-    [cite_start]flex-direction: column; [cite: 16]
-    [cite_start]align-items: center; [cite: 16]
-    [cite_start]justify-content: center; [cite: 16]
-    [cite_start]padding: 20px; [cite: 16]
+/* Estilos do Rodapé */
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-[cite_start]footer p { [cite: 16]
-    [cite_start]margin: 5px 0; [cite: 16]
-    [cite_start]font-size: 0.9em; [cite: 16]
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
 }
 
-[cite_start]footer a { [cite: 16]
-    [cite_start]color: #aaaaaa; [cite: 16]
-    [cite_start]text-decoration: none; [cite: 16]
-    [cite_start]transition: color 0.3s ease; [cite: 16]
+footer a {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-[cite_start]footer a:hover { [cite: 16]
-    [cite_start]color: var(--cor-destaque); [cite: 16]
+footer a:hover {
+    color: var(--cor-destaque);
 }
 
-[cite_start].footer-links a, .social-links a { [cite: 16]
-    [cite_start]margin: 0 8px; [cite: 16]
+.footer-links a, .social-links a {
+    margin: 0 8px;
+}
+
+/* Responsividade para o rodapé em telas menores */
+@media (max-width: 480px) {
+    footer .container {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    .footer-links a, .social-links a {
+        display: block;
+        margin: 5px 0;
+    }
 }
 
 /* Responsividade */
@@ -397,8 +384,14 @@ section {
 
     .hero-content, .hero-image {
         max-width: 100%; /* Ocupa largura total */
-        padding-right: 0; [cite_start]/* Remove padding lateral que pode causar estouro */ [cite: 18]
+        padding-right: 0; /* Remove padding lateral que pode causar estouro */
         margin-bottom: 40px; /* Espaçamento entre texto e imagem */
+    }
+
+    /* Adicionado para espaçamento do botão na hero-section em mobile */
+    .hero-section .hero-content .btn {
+        margin-top: 30px; 
+        margin-bottom: 20px; 
     }
 
     .hero-content h1 {
@@ -468,14 +461,14 @@ section {
         top: 20px;
     }
 
-    [cite_start]/* AJUSTE PARA O TÍTULO PRINCIPAL */ [cite: 18]
-    [cite_start].hero-content h1 { [cite: 18]
-        font-size: 2.2em; [cite_start]/* Reduz ainda mais o tamanho da fonte do h1 na hero-section */ [cite: 18]
+    /* AJUSTE PARA O TÍTULO PRINCIPAL */
+    .hero-content h1 {
+        font-size: 2.2em; /* Reduz ainda mais o tamanho da fonte do h1 na hero-section */
     }
 
-    [cite_start]/* AJUSTE PARA O PARÁGRAFO DA HERO SECTION */ [cite: 18]
-    [cite_start].hero-content p { [cite: 18]
-        font-size: 1em; [cite_start]/* Reduz o tamanho do parágrafo */ [cite: 18]
+    /* AJUSTE PARA O PARÁGRAFO DA HERO SECTION */
+    .hero-content p {
+        font-size: 1em; /* Reduz o tamanho do parágrafo */
     }
 
     h1 {
@@ -498,52 +491,36 @@ section {
         font-size: 1.3em;
     }
 
-    [cite_start]/* Ajuste para garantir que a imagem do e-book se ajuste bem */ [cite: 18]
-    [cite_start].hero-image img { [cite: 18]
-        max-width: 80%; [cite_start]/* Garante que a imagem do e-book não fique muito grande */ [cite: 18]
-        [cite_start]margin: 0 auto; [cite: 18]
+    /* Ajuste para garantir que a imagem do e-book se ajuste bem */
+    .hero-image img {
+        max-width: 80%; /* Garante que a imagem do e-book não fique muito grande */
+        margin: 0 auto;
     }
 }
 
-[cite_start]/* NOVO: Media Query para telas MUITO pequenas (ex: 375px a 420px) */ [cite: 18]
-[cite_start]@media (max-width: 420px) { [cite: 18]
-    [cite_start].hero-content h1 { [cite: 18]
-        font-size: 1.8em; [cite_start]/* Ajuste ainda mais o h1 para telas super pequenas */ [cite: 18]
-        padding: 0 10px; [cite_start]/* Adiciona um pequeno padding horizontal para evitar colisão com as bordas */ [cite: 18]
-        line-height: 1.1; [cite_start]/* Ajusta o espaçamento entre as linhas */ [cite: 18]
+/* NOVO: Media Query para telas MUITO pequenas (ex: 375px a 420px) */
+@media (max-width: 420px) {
+    .hero-content h1 {
+        font-size: 1.8em; /* Ajuste ainda mais o h1 para telas super pequenas */
+        padding: 0 10px; /* Adiciona um pequeno padding horizontal para evitar colisão com as bordas */
+        line-height: 1.1; /* Ajusta o espaçamento entre as linhas */
     }
-    [cite_start].hero-content p { [cite: 18]
-        font-size: 0.9em; [cite_start]/* Parágrafo menor */ [cite: 18]
-        [cite_start]padding: 0 10px; [cite: 18]
+    .hero-content p {
+        font-size: 0.9em; /* Parágrafo menor */
+        padding: 0 10px;
     }
-    [cite_start].btn { [cite: 18]
-        font-size: 1em; [cite_start]/* Botão ligeiramente menor */ [cite: 18]
-        [cite_start]padding: 10px 20px; [cite: 18]
-    }
-}
-
-[cite_start]/* NOVO: Media Query para telas EXTREMAMENTE pequenas (se necessário, ex: iPhone 5/SE) */ [cite: 18]
-[cite_start]@media (max-width: 360px) { [cite: 18]
-    [cite_start].hero-content h1 { [cite: 18]
-        font-size: 1.6em; [cite_start]/* Ajuste para títulos em telas muito estreitas */ [cite: 18]
-    }
-    [cite_start].hero-content p { [cite: 18]
-        [cite_start]font-size: 0.85em; [cite: 18]
+    .btn {
+        font-size: 1em; /* Botão ligeiramente menor */
+        padding: 10px 20px;
     }
 }
 
-/* Responsividade para o rodapé em telas menores */
-@media (max-width: 480px) {
-    footer .container {
-        padding: 15px;
+/* NOVO: Media Query para telas EXTREMAMENTE pequenas (se necessário, ex: iPhone 5/SE) */
+@media (max-width: 360px) {
+    .hero-content h1 {
+        font-size: 1.6em; /* Ajuste para títulos em telas muito estreitas */
     }
-
-    footer p {
-        font-size: 0.8em;
-    }
-
-    .footer-links a, .social-links a {
-        display: block;
-        margin: 5px 0;
+    .hero-content p {
+        font-size: 0.85em;
     }
 }
