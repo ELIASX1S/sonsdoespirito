@@ -114,6 +114,35 @@ section {
     align-items: center;
     justify-content: center;
     text-align: left; /* Alinha o texto do banner à esquerda */
+	/* Responsividade */
+@media (max-width: 992px) {
+    /* ... suas regras existentes para 992px ... */
+
+    .hero-section .hero-content .btn {
+        margin-top: 30px; /* Adiciona um espaço acima do botão no celular */
+        margin-bottom: 20px; /* Garante um espaço abaixo do botão, se for o último elemento da seção de conteúdo */
+    }
+
+    /* ... continue com suas outras regras para 992px ... */
+}
+
+/* As outras media queries continuam normalmente abaixo */
+
+@media (max-width: 768px) {
+    /* ... */
+}
+
+@media (max-width: 480px) {
+    /* ... */
+}
+
+@media (max-width: 420px) {
+    /* ... */
+}
+
+@media (max-width: 360px) {
+    /* ... */
+
 }
 
 .hero-section .container {
