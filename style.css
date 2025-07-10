@@ -7,7 +7,9 @@
     --cor-botoes-hover: #b81c6a;   /* Rosa um pouco mais escuro para hover */
     --largura-maxima-container: 1000px; /* Largura máxima do conteúdo */
 }
-
+html {
+    scroll-behavior: smooth; /* Adiciona rolagem suave para âncoras */
+}
 body {
     font-family: 'Poppins', sans-serif; /* Uma fonte moderna, você pode ajustar se tiver uma preferência */
     background-color: var(--cor-fundo-principal);
