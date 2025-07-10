@@ -263,9 +263,19 @@ section {
 }
 
 
-/* Seção 5: Bônus Exclusivos (.exclusive-bonus-section) */
+/* Seção 5: Bônus Exclusivos */
 .exclusive-bonus-section {
-    background-color: var(--cor-fundo-principal);
+    background-color: var(--cor-fundo-principal); /* Garante que a cor de fundo seja a principal */
+    padding: 80px 0;
+}
+
+.bonus-intro-text {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    color: var(--cor-texto-secundario);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bonus-grid {
@@ -287,8 +297,13 @@ section {
     display: flex; /* Para alinhar o conteúdo verticalmente */
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    min-height: 350px; /* Altura mínima para os cards ficarem mais alinhados */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo do card */
+    min-height: 400px; /* **AJUSTE AQUI** - Aumentei a altura mínima para acomodar mais texto e manter os cards alinhados. Você pode testar outros valores. */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.bonus-item:hover {
+    transform: translateY(-5px); /* Efeito de "elevar" o card no hover */
 }
 
 .bonus-item img {
@@ -299,119 +314,34 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+.bonus-item h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--cor-destaque); /* Título do bônus em rosa destaque */
+}
+
 .bonus-item p {
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--cor-texto-claro);
-    margin-bottom: 0; /* Remove margem inferior para parágrafos dentro do item */
+    margin-bottom: 0;
+    flex-grow: 1; /* Permite que o parágrafo ocupe o espaço restante */
 }
 
-/* Rodapé */
-footer {
-    background-color: #220f25; /* Cor mais escura para o rodapé */
-    color: #aaaaaa;
-    padding: 30px 20px;
-    font-size: 0.9em;
-    text-align: center;
-}
-
-/* Responsividade */
+/* Responsividade para Bônus Exclusivos */
 @media (max-width: 992px) {
-    .hero-section .container {
-        flex-direction: column; /* Pilha os itens em telas menores */
-        text-align: center;
-    }
-
-    .hero-content, .hero-image {
-        max-width: 100%; /* Ocupa largura total */
-        padding-right: 0;
-        margin-bottom: 40px; /* Espaçamento entre texto e imagem */
-    }
-
-    .hero-content h1 {
-        font-size: 3em;
-    }
-
-    .hero-content p {
-        font-size: 1.1em;
-    }
-
-    h1 {
-        font-size: 2.8em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    .bonus-grid {
-        flex-direction: column; /* Bônus um abaixo do outro */
-        align-items: center;
-    }
-
     .bonus-item {
-        max-width: 80%; /* Ocupa mais largura em telas menores */
-        flex-basis: auto;
-        min-height: auto;
-        margin-bottom: 20px;
+        max-width: 45%; /* 2 itens por linha em telas médias */
+        min-height: auto; /* Remove altura mínima para se ajustar melhor */
     }
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 30px 15px;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 1.8em;
-    }
-
-    .btn, .btn-buy {
-        font-size: 1.1em;
-        padding: 12px 25px;
-    }
-
-    .why-ebook-section ul li {
-        font-size: 1.1em;
-    }
-
-    .content-section ul li {
-        font-size: 1.1em;
-        padding-left: 25px;
-    }
-
-    .content-section ul li::before {
-        font-size: 1.1em;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 0.9em;
-        top: 20px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .price-text {
-        font-size: 1.4em;
-    }
-
-    .highlight-price {
-        font-size: 1.3em;
+    .bonus-item {
+        max-width: 80%; /* Ocupa mais largura em telas menores */
+        flex-basis: auto;
+        margin-bottom: 20px;
+        min-height: auto; /* Garante que a altura se ajuste ao conteúdo */
     }
 }
