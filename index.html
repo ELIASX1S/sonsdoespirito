@@ -168,14 +168,13 @@
         <!-- LINK NOVO HOTMART -->
         <a
           href="https://pay.hotmart.com/F95869280D?off=gh93ys7a&checkoutMode=10"
-          class="btn-buy"
-          id="cta-checkout"
-          data-cta="checkout_main"
-          target="_blank"
-          rel="noopener"
-        >
-          CLIQUE AQUI PARA COMPRAR
-        </a>
+          class="btn"
+          onclick="gtag('event', 'checkout_click', {
+          event_category: 'engagement',
+         event_label: 'botao_principal'
+         });">
+         QUERO COMEÇAR HOJE
+          </a>
 
         <p class="microcopy">
           🔒 Compra 100% segura pela Hotmart • Acesso imediato após pagamento
@@ -249,6 +248,7 @@
 
 </body>
 </html>
+
 
 
 
