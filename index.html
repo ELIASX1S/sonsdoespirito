@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Google tag (gtag.js) - G-SZVHH4EVKK -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SZVHH4EVKK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -9,247 +8,981 @@
     gtag('js', new Date());
     gtag('config', 'G-SZVHH4EVKK');
   </script>
-
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>7 Passos para Melhorar sua Vida de Oração - Sons do Espírito</title>
+  <title>7 Passos para Melhorar sua Vida de Oração — Sons do Espírito</title>
   <link rel="icon" href="images/favicon.png" type="image/png">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="7 Passos para Melhorar sua Vida de Oração - Sons do Espírito">
-  <meta property="og:description" content="Guia prático para destravar sua oração, fortalecer sua fé e voltar a sentir a presença de Deus. Acesso imediato via Hotmart.">
+  <meta property="og:title" content="7 Passos para Melhorar sua Vida de Oração — Sons do Espírito">
+  <meta property="og:description" content="Guia prático para destravar sua oração, fortalecer sua fé e voltar a sentir a presença de Deus.">
   <meta property="og:image" content="https://eliasx1s.github.io/sonsdoespirito/images/share-image.jpg">
   <meta property="og:url" content="https://sonsdoespirito.store/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Sons do Espírito">
-  <meta property="og:locale" content="pt_BR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ═══════════════════════════════════════════
+       TOKENS
+    ═══════════════════════════════════════════ */
+    :root {
+      --ink:       #0d0a07;
+      --parchment: #f9f3e8;
+      --cream:     #fdf8f0;
+      --gold:      #c49a3c;
+      --gold-deep: #9a7420;
+      --gold-lite: #f0d080;
+      --ember:     #c0392b;
+      --ember-deep:#96251e;
+      --mist:      #e8e0d0;
+      --slate:     #4a4030;
+      --shadow:    rgba(13,10,7,.18);
+      --r:         10px;
+    }
 
-  <!-- CSS (v=3 pra quebrar cache) -->
-  <link rel="stylesheet" href="./style.css?v=3">
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--parchment);
+      color: var(--ink);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ═══════════════════════════════════════════
+       TOPBAR
+    ═══════════════════════════════════════════ */
+    .topbar {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--ink);
+      border-bottom: 2px solid var(--gold);
+    }
+    .topbar-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 13px 24px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: .95rem; letter-spacing: 3px;
+      color: var(--gold-lite); font-weight: 700;
+    }
+    .topbar-cta {
+      background: var(--ember);
+      color: #fff; text-decoration: none;
+      font-weight: 900; font-size: .88rem;
+      letter-spacing: 1px; padding: 9px 20px;
+      border-radius: 4px;
+      transition: background .2s, transform .2s;
+    }
+    .topbar-cta:hover { background: var(--ember-deep); transform: translateY(-1px); }
+
+    /* ═══════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════ */
+    .hero {
+      background: var(--ink);
+      position: relative; overflow: hidden;
+    }
+    /* decorative cross pattern */
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        radial-gradient(circle at 70% 30%, rgba(196,154,60,.12) 0%, transparent 55%),
+        radial-gradient(circle at 15% 80%, rgba(192,57,43,.1) 0%, transparent 45%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 80px 24px 70px;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 60px; align-items: center;
+    }
+    .kicker {
+      display: inline-block;
+      font-size: .78rem; font-weight: 900;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(196,154,60,.4);
+      padding: 5px 14px; border-radius: 2px;
+      margin-bottom: 22px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.12; color: #fff;
+      font-weight: 900; margin-bottom: 22px;
+    }
+    .hero h1 em {
+      font-style: italic; color: var(--gold-lite);
+    }
+    .hero-lead {
+      font-size: 1.12rem; color: #c8bfb0;
+      max-width: 520px; margin-bottom: 30px; line-height: 1.8;
+    }
+    .pain-line {
+      background: rgba(192,57,43,.15);
+      border-left: 3px solid var(--ember);
+      padding: 14px 18px; border-radius: 0 6px 6px 0;
+      color: #e8d8c8; font-size: 1rem;
+      margin-bottom: 30px; font-style: italic;
+    }
+    .hero-badges {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      font-size: .82rem; font-weight: 700;
+      color: var(--gold-lite);
+      border: 1px solid rgba(196,154,60,.35);
+      padding: 6px 14px; border-radius: 2px;
+      letter-spacing: .5px;
+    }
+    .hero-ctas {
+      display: flex; flex-wrap: wrap; gap: 14px;
+      align-items: center;
+    }
+    .btn-primary {
+      background: var(--ember);
+      color: #fff; text-decoration: none;
+      font-weight: 900; font-size: 1rem;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 16px 32px; border-radius: 4px;
+      border: none; cursor: pointer;
+      transition: background .2s, transform .2s, box-shadow .2s;
+      box-shadow: 0 4px 20px rgba(192,57,43,.35);
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background: var(--ember-deep);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(192,57,43,.45);
+    }
+    .btn-ghost {
+      color: var(--gold-lite); text-decoration: none;
+      font-weight: 700; font-size: .92rem;
+      border: 1px solid rgba(196,154,60,.35);
+      padding: 15px 24px; border-radius: 4px;
+      transition: background .2s, border-color .2s;
+      display: inline-block;
+    }
+    .btn-ghost:hover {
+      background: rgba(196,154,60,.08);
+      border-color: var(--gold);
+    }
+    .secure-note {
+      margin-top: 16px; font-size: .82rem;
+      color: #7a7060; letter-spacing: .3px;
+    }
+    .hero-book {
+      position: relative; text-align: center;
+    }
+    .hero-book img {
+      width: 100%; max-width: 340px;
+      border-radius: 8px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.55), 0 0 0 1px rgba(196,154,60,.2);
+      animation: float 5s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-10px); }
+    }
+    .price-pill {
+      display: inline-block;
+      background: var(--ember); color: #fff;
+      font-weight: 900; font-size: 1.1rem;
+      padding: 10px 22px; border-radius: 50px;
+      margin-top: 20px; letter-spacing: .5px;
+      box-shadow: 0 4px 16px rgba(192,57,43,.4);
+    }
+    .price-pill s { opacity: .65; font-weight: 400; font-size: .9em; margin-right: 6px; }
+
+    /* ═══════════════════════════════════════════
+       DIVIDER
+    ═══════════════════════════════════════════ */
+    .divider {
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    /* ═══════════════════════════════════════════
+       SOCIAL PROOF STRIP
+    ═══════════════════════════════════════════ */
+    .proof-strip {
+      background: #1a1510;
+      padding: 22px 24px;
+    }
+    .proof-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; flex-wrap: wrap; gap: 28px;
+      justify-content: center; align-items: center;
+    }
+    .proof-stat {
+      text-align: center; color: #fff;
+    }
+    .proof-stat strong {
+      display: block; font-size: 1.8rem; font-weight: 900;
+      color: var(--gold); font-family: 'Playfair Display', serif;
+      line-height: 1;
+    }
+    .proof-stat span { font-size: .8rem; color: #9a8f80; letter-spacing: 1px; text-transform: uppercase; }
+    .proof-sep { width: 1px; height: 40px; background: rgba(196,154,60,.25); }
+
+    /* ═══════════════════════════════════════════
+       SECTION BASE
+    ═══════════════════════════════════════════ */
+    .section { padding: 80px 24px; }
+    .section-inner { max-width: 1000px; margin: 0 auto; }
+    .section-label {
+      font-size: .75rem; font-weight: 900; letter-spacing: 4px;
+      text-transform: uppercase; color: var(--gold);
+      display: block; margin-bottom: 12px; text-align: center;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.2; text-align: center;
+      margin-bottom: 16px; color: var(--ink);
+    }
+    .section-sub {
+      text-align: center; color: var(--slate);
+      font-size: 1.05rem; max-width: 640px;
+      margin: 0 auto 50px; line-height: 1.8;
+    }
+    .gold-line {
+      width: 60px; height: 2px;
+      background: var(--gold);
+      margin: 18px auto 0;
+    }
+
+    /* ═══════════════════════════════════════════
+       PAIN SECTION
+    ═══════════════════════════════════════════ */
+    .pain-section { background: var(--cream); }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px; margin-top: 10px;
+    }
+    .pain-card {
+      background: #fff;
+      border: 1px solid var(--mist);
+      border-top: 3px solid var(--ember);
+      border-radius: var(--r);
+      padding: 24px 20px;
+      box-shadow: 0 4px 16px var(--shadow);
+    }
+    .pain-card .icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .pain-card p { color: var(--slate); font-size: .97rem; margin: 0; }
+
+    /* ═══════════════════════════════════════════
+       STEPS
+    ═══════════════════════════════════════════ */
+    .steps-section { background: var(--ink); }
+    .steps-section .section-title { color: #fff; }
+    .steps-section .section-sub { color: #9a8f80; }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .step-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(196,154,60,.2);
+      border-radius: var(--r);
+      padding: 28px 22px;
+      position: relative;
+      transition: background .25s, transform .25s;
+    }
+    .step-card:hover {
+      background: rgba(196,154,60,.07);
+      transform: translateY(-3px);
+    }
+    .step-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem; font-weight: 900;
+      color: rgba(196,154,60,.25);
+      position: absolute; top: 14px; right: 18px;
+      line-height: 1;
+    }
+    .step-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem; color: var(--gold-lite);
+      margin-bottom: 10px; line-height: 1.3;
+    }
+    .step-card p { color: #9a8f80; font-size: .93rem; margin: 0; }
+    .step-tag {
+      display: inline-block;
+      font-size: .72rem; font-weight: 900; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--gold);
+      background: rgba(196,154,60,.12);
+      padding: 3px 10px; border-radius: 2px;
+      margin-bottom: 12px;
+    }
+
+    /* ═══════════════════════════════════════════
+       SCHEDULE PREVIEW
+    ═══════════════════════════════════════════ */
+    .sched-section { background: var(--cream); }
+    .sched-weeks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px; margin-top: 10px;
+    }
+    .sched-week {
+      border-radius: var(--r);
+      overflow: hidden;
+      box-shadow: 0 4px 20px var(--shadow);
+    }
+    .sched-week-head {
+      padding: 16px 18px;
+      font-weight: 900; font-size: .88rem;
+      letter-spacing: 1px; color: #fff;
+      text-transform: uppercase;
+    }
+    .sw1 .sched-week-head { background: #1a1510; border-top: 3px solid var(--gold); }
+    .sw2 .sched-week-head { background: #1a1510; border-top: 3px solid #8b5cf6; }
+    .sw3 .sched-week-head { background: #1a1510; border-top: 3px solid var(--ember); }
+    .sw4 .sched-week-head { background: #1a1510; border-top: 3px solid #16a34a; }
+    .sched-week-body {
+      background: #fff; padding: 16px 18px;
+      border: 1px solid var(--mist); border-top: none;
+      border-radius: 0 0 var(--r) var(--r);
+    }
+    .sched-week-body p {
+      font-size: .88rem; color: var(--slate);
+      margin: 0 0 6px 0; padding-left: 14px;
+      position: relative;
+    }
+    .sched-week-body p::before {
+      content: '→'; position: absolute; left: 0;
+      color: var(--gold); font-size: .8rem;
+    }
+    .sched-focus {
+      font-size: .78rem; font-weight: 700;
+      color: var(--gold); letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px; display: block;
+    }
+
+    /* ═══════════════════════════════════════════
+       TESTIMONIALS (placeholder)
+    ═══════════════════════════════════════════ */
+    .testi-section { background: #fff; }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+    .testi-card {
+      background: var(--cream);
+      border: 1px solid var(--mist);
+      border-radius: var(--r);
+      padding: 28px 24px;
+      position: relative;
+    }
+    .testi-card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem; color: var(--gold);
+      opacity: .2; position: absolute;
+      top: 8px; left: 16px; line-height: 1;
+    }
+    .testi-stars { color: var(--gold); font-size: 1rem; margin-bottom: 12px; }
+    .testi-card blockquote {
+      font-size: .98rem; color: var(--slate);
+      font-style: italic; line-height: 1.7;
+      margin: 0 0 16px 0;
+    }
+    .testi-name {
+      font-weight: 900; font-size: .85rem;
+      letter-spacing: 1px; color: var(--ink);
+      text-transform: uppercase;
+    }
+    .testi-loc { font-size: .8rem; color: #9a8f80; }
+    .testi-placeholder {
+      text-align: center; padding: 40px 20px;
+      border: 2px dashed var(--mist);
+      border-radius: var(--r); color: #b0a090;
+      font-size: .9rem; font-style: italic;
+    }
+
+    /* ═══════════════════════════════════════════
+       BONUS
+    ═══════════════════════════════════════════ */
+    .bonus-section { background: var(--parchment); }
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+    .bonus-card {
+      background: #fff;
+      border: 1px solid var(--mist);
+      border-radius: var(--r);
+      padding: 26px 22px;
+      text-align: center;
+      box-shadow: 0 4px 16px var(--shadow);
+      transition: transform .22s;
+    }
+    .bonus-card:hover { transform: translateY(-4px); }
+    .bonus-card img {
+      width: 130px; height: auto;
+      border-radius: 6px; margin-bottom: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    }
+    .bonus-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; color: var(--ink);
+      margin-bottom: 10px; line-height: 1.35;
+    }
+    .bonus-card p { font-size: .9rem; color: var(--slate); margin: 0; }
+    .bonus-value {
+      display: inline-block; margin-top: 12px;
+      font-size: .78rem; font-weight: 900;
+      color: var(--gold-deep); letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ═══════════════════════════════════════════
+       OFFER / PRICING
+    ═══════════════════════════════════════════ */
+    .offer-section { background: var(--ink); }
+    .offer-box {
+      max-width: 680px; margin: 0 auto;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(196,154,60,.3);
+      border-radius: 16px;
+      padding: 50px 40px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,.4);
+    }
+    .offer-box .section-title { color: #fff; margin-bottom: 8px; }
+    .offer-includes {
+      text-align: left; margin: 28px 0;
+      list-style: none;
+    }
+    .offer-includes li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      color: #c8bfb0; font-size: .97rem;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .offer-includes li:last-child { border-bottom: none; }
+    .offer-includes li::before {
+      content: '✦'; color: var(--gold);
+      font-size: .85rem; flex-shrink: 0; margin-top: 2px;
+    }
+    .price-area { margin: 28px 0 10px; }
+    .price-was {
+      font-size: .95rem; color: #7a7060;
+      text-decoration: line-through; margin-bottom: 4px;
+    }
+    .price-now {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem; font-weight: 900;
+      color: var(--gold); line-height: 1;
+    }
+    .price-now sup { font-size: 1.4rem; vertical-align: super; }
+    .price-now sub { font-size: 1.2rem; }
+    .price-note { font-size: .82rem; color: #7a7060; margin-top: 4px; }
+    .urgency {
+      background: rgba(192,57,43,.15);
+      border: 1px solid rgba(192,57,43,.3);
+      border-radius: 6px; padding: 10px 16px;
+      font-size: .88rem; color: #e8b8b0;
+      font-weight: 700; margin: 18px 0 24px;
+    }
+    .guarantee {
+      background: rgba(196,154,60,.08);
+      border: 1px solid rgba(196,154,60,.25);
+      border-radius: 8px; padding: 18px 20px;
+      margin-top: 24px; text-align: left;
+    }
+    .guarantee strong { color: var(--gold-lite); display: block; margin-bottom: 6px; }
+    .guarantee p { color: #9a8f80; font-size: .88rem; margin: 0; }
+    .btn-offer {
+      display: inline-block; width: 100%;
+      background: var(--ember); color: #fff;
+      text-decoration: none; font-weight: 900;
+      font-size: 1.05rem; letter-spacing: 2px;
+      text-transform: uppercase; padding: 18px 24px;
+      border-radius: 6px; border: none; cursor: pointer;
+      transition: background .2s, transform .2s, box-shadow .2s;
+      box-shadow: 0 6px 24px rgba(192,57,43,.4);
+    }
+    .btn-offer:hover {
+      background: var(--ember-deep);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(192,57,43,.5);
+    }
+    .secure-row {
+      margin-top: 16px; font-size: .8rem;
+      color: #5a5248; letter-spacing: .3px;
+    }
+
+    /* ═══════════════════════════════════════════
+       FAQ
+    ═══════════════════════════════════════════ */
+    .faq-section { background: var(--cream); }
+    .faq-list { max-width: 720px; margin: 0 auto; }
+    details {
+      background: #fff;
+      border: 1px solid var(--mist);
+      border-radius: var(--r);
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: box-shadow .2s;
+    }
+    details[open] { box-shadow: 0 4px 20px var(--shadow); }
+    summary {
+      cursor: pointer; font-weight: 700;
+      font-size: 1rem; color: var(--ink);
+      padding: 18px 20px;
+      list-style: none; display: flex;
+      justify-content: space-between; align-items: center;
+    }
+    summary::after {
+      content: '+'; font-size: 1.4rem;
+      color: var(--gold); font-weight: 300;
+      transition: transform .2s;
+    }
+    details[open] summary::after { transform: rotate(45deg); }
+    details p {
+      padding: 0 20px 18px;
+      color: var(--slate); font-size: .97rem; margin: 0;
+    }
+
+    /* ═══════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════ */
+    footer {
+      background: #0d0a07;
+      border-top: 2px solid rgba(196,154,60,.2);
+      padding: 30px 24px; text-align: center;
+    }
+    footer p { font-size: .82rem; color: #4a4030; margin: 0; }
+
+    /* ═══════════════════════════════════════════
+       STICKY MOBILE CTA
+    ═══════════════════════════════════════════ */
+    .sticky-cta {
+      display: none;
+      position: fixed; bottom: 12px; left: 12px; right: 12px;
+      z-index: 99; text-align: center;
+      background: var(--ember); color: #fff;
+      text-decoration: none; font-weight: 900;
+      font-size: .95rem; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 8px 30px rgba(192,57,43,.5);
+    }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════ */
+    @media (max-width: 860px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center; padding: 60px 20px 50px;
+        gap: 40px;
+      }
+      .hero-lead { max-width: 100%; }
+      .hero-ctas { justify-content: center; }
+      .hero-book img { max-width: 260px; }
+      .proof-sep { display: none; }
+    }
+    @media (max-width: 600px) {
+      .section { padding: 60px 18px; }
+      .offer-box { padding: 36px 22px; }
+      .hero-ctas { flex-direction: column; align-items: stretch; text-align: center; }
+      .btn-primary, .btn-ghost { text-align: center; }
+      .sticky-cta { display: block; }
+      .topbar-cta { display: none; }
+      .price-now { font-size: 3rem; }
+    }
+  </style>
 </head>
-
 <body>
 
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand">SONS DO ESPÍRITO</div>
-      <a class="topbar-cta" href="#oferta" data-cta="topbar">COMPRAR AGORA</a>
+<!-- ══ TOPBAR ══════════════════════════════════════════ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">Sons do Espírito</div>
+    <a class="topbar-cta" href="#oferta" data-cta="topbar">COMPRAR AGORA</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ══ HERO ════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="kicker">Guia Prático • Acesso Imediato • Cronograma de 30 Dias</span>
+      <h1>Você ainda sente que <em>Deus está longe</em> quando ora?</h1>
+
+      <div class="pain-line">
+        "Ajoelho, fecho os olhos… e nada sai. Ou pior: as palavras vêm, mas parecem ecoar no vazio."
+      </div>
+
+      <p class="hero-lead">
+        Este guia prático vai te conduzir, passo a passo, de volta a uma oração com propósito, fé e profundidade — mesmo que você sinta que já perdeu a constância há muito tempo.
+      </p>
+
+      <div class="hero-badges">
+        <span class="badge">✦ Para iniciantes e quem já ora</span>
+        <span class="badge">✦ Sem teoria vazia</span>
+        <span class="badge">✦ Cronograma de 30 dias incluso</span>
+      </div>
+
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#oferta" data-cta="hero_primary">QUERO COMEÇAR HOJE</a>
+        <a class="btn-ghost" href="#conteudo" data-cta="hero_secondary">Ver o que tem dentro →</a>
+      </div>
+      <p class="secure-note">🔒 Compra segura via Hotmart • Acesso imediato • Garantia de 7 dias</p>
     </div>
-  </header>
 
-  <main>
-
-    <!-- HERO -->
-    <section class="hero-section" id="topo">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="kicker">GUIA PRÁTICO • APLICAÇÃO DIÁRIA • ACESSO IMEDIATO</p>
-
-          <h1>7 Passos para melhorar sua vida de oração e voltar a sentir a presença de Deus.</h1>
-
-          <p class="lead">
-            Você ora, mas sente que sua oração perdeu força, profundidade ou constância?
-            Este guia prático vai te conduzir passo a passo para orar com propósito, fé e disciplina espiritual.
-          </p>
-
-          <div class="hero-badges">
-            <span class="badge">✅ Para iniciantes e quem já ora</span>
-            <span class="badge">✅ Direto ao ponto</span>
-            <span class="badge">✅ Sem “teoria infinita”</span>
-          </div>
-
-          <!-- Botões com links (sem “quebrar”) -->
-          <div class="hero-actions">
-            <a class="btn" href="#oferta" data-cta="hero_primary">QUERO COMEÇAR HOJE</a>
-            <a class="btn btn-ghost" href="#conteudo" data-cta="hero_secondary">VER O QUE TEM DENTRO</a>
-          </div>
-
-          <p class="microcopy">
-            🔒 Compra segura via Hotmart • Acesso imediato • Suporte por e-mail
-          </p>
-        </div>
-
-        <div class="hero-image">
-          <img src="images/bonus3.png" alt="Capa do E-book 7 Passos para Melhorar sua Vida de Oração">
-        </div>
-      </div>
-    </section>
-
-    <!-- PARA VOCÊ -->
-    <section class="why-ebook-section" id="para-voce">
-      <div class="container">
-        <h2>🙏 Isso é pra você se...</h2>
-
-        <ul class="list-bullets">
-          <li>Você ora, mas sente que “não sai do lugar” e falta direção.</li>
-          <li>Sua mente acelera, a ansiedade pesa e você quer paz em Deus.</li>
-          <li>Você quer constância (sem depender de emoção).</li>
-          <li>Você quer aprender a orar com propósito, fé e perseverança.</li>
-        </ul>
-
-        <div class="callout">
-          <strong>Objetivo:</strong> te dar um caminho claro para construir uma vida de oração mais profunda,
-          com passos práticos e aplicáveis.
-        </div>
-
-        <a href="#oferta" class="btn" data-cta="mid_cta">SIM, EU QUERO</a>
-      </div>
-    </section>
-
-    <!-- CONTEÚDO -->
-    <section class="content-section" id="conteudo">
-      <div class="container">
-        <h2>✨ O que você vai aprender (de forma prática)</h2>
-
-        <ul class="list-checks">
-          <li>Como destravar sua oração e ter constância.</li>
-          <li>Como orar com propósito (e não só “pedir coisas”).</li>
-          <li>Como fortalecer fé e perseverança sem desanimar.</li>
-          <li>Como usar gratidão e adoração para transformar o coração.</li>
-          <li>Como buscar discernimento e direção em Deus.</li>
-          <li>Como desenvolver uma vida de oração mais profunda.</li>
-        </ul>
-
-        <a href="#oferta" class="btn-buy" data-cta="content_cta">QUERO GARANTIR O MEU</a>
-      </div>
-    </section>
-
-    <!-- BÔNUS -->
-    <section class="exclusive-bonus-section" id="bonus">
-      <div class="container">
-        <h2>🎁 Bônus que você recebe junto</h2>
-        <p class="bonus-intro-text">
-          Comprando agora, você leva materiais complementares para fortalecer sua paz e sua caminhada.
-        </p>
-
-        <div class="bonus-grid">
-          <div class="bonus-item">
-            <img src="images/ebook-mockup.png" alt="Capa do Bônus: Cura e Transformação pela Música Divina">
-            <h3>Cura e Transformação pela Música Divina</h3>
-            <p>Como usar a música inspirada por Deus para acalmar a mente, restaurar emoções e criar um ambiente de paz.</p>
-          </div>
-
-          <div class="bonus-item">
-            <img src="images/bonus2.png" alt="Capa do Bônus: Encontrando Paz em Tempos de Tribulação">
-            <h3>Encontrando Paz em Tempos de Tribulação</h3>
-            <p>Fundamentos bíblicos + práticas simples para manter a fé firme mesmo em tempos difíceis.</p>
-          </div>
-
-          <div class="bonus-item">
-            <img src="images/bonus1.png" alt="Capa do Bônus: Descubra Sua Verdadeira Felicidade">
-            <h3>Descubra Sua Verdadeira Felicidade</h3>
-            <p>Um guia para fortalecer gratidão, hábitos e vida interior — focando no que realmente sustenta a alma.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OFERTA -->
-    <section class="price-bonus-section" id="oferta">
-      <div class="container">
-        <h2>💡 Comece hoje — sem complicação</h2>
-
-        <p class="preco-ancora">De <strong>R$ 47,00</strong> por apenas</p>
-        <p class="price-text"><span class="highlight-price">R$ 29,90</span></p>
-
-        <p class="urgencia">⚠️ Condição promocional pode sair do ar a qualquer momento.</p>
-
-        <ul class="list-checks light">
-          <li><strong>E-book principal:</strong> 7 Passos para Melhorar sua Vida de Oração</li>
-          <li><strong>Bônus:</strong> Música Divina + Paz na Tribulação + Verdadeira Felicidade</li>
-          <li><strong>Acesso imediato</strong> pela Hotmart</li>
-        </ul>
-
-        <div class="garantia-box">
-          <strong>🛡 Garantia de 7 dias</strong>
-          <p>Se por qualquer motivo você não gostar, pode pedir reembolso total pela Hotmart dentro de 7 dias.</p>
-        </div>
-
-        <!-- LINK NOVO HOTMART -->
-        <a
-          href="https://pay.hotmart.com/F95869280D?off=gh93ys7a&checkoutMode=10"
-          class="btn"
-          onclick="gtag('event', 'checkout_click', {
-          event_category: 'engagement',
-         event_label: 'botao_principal'
-         });">
-         QUERO COMEÇAR HOJE
-          </a>
-
-        <p class="microcopy">
-          🔒 Compra 100% segura pela Hotmart • Acesso imediato após pagamento
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="content-section" id="faq">
-      <div class="container">
-        <h2>❓ Dúvidas rápidas</h2>
-
-        <div class="faq">
-          <details>
-            <summary>Como vou receber o material?</summary>
-            <p>Após a compra, a Hotmart libera o acesso imediatamente no seu e-mail e na plataforma.</p>
-          </details>
-
-          <details>
-            <summary>Funciona se eu tiver pouco tempo?</summary>
-            <p>Sim. O método é feito para ser aplicado em poucos minutos por dia.</p>
-          </details>
-
-          <details>
-            <summary>Preciso ter experiência para orar?</summary>
-            <p>Não. É um guia passo a passo — serve para iniciantes e para quem quer aprofundar.</p>
-          </details>
-
-          <details>
-            <summary>É material cristão?</summary>
-            <p>Sim. O foco é oração, fé e presença de Deus, com linguagem simples e prática.</p>
-          </details>
-        </div>
-
-        <a href="#oferta" class="btn" data-cta="faq_cta">QUERO GARANTIR O MEU</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Sons do Espírito. Todos os direitos reservados.</p>
+    <div class="hero-book">
+      <img src="images/bonus3.png" alt="E-book 7 Passos para Melhorar sua Vida de Oração">
+      <div class="price-pill"><s>R$ 47</s> R$ 29,90</div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Sticky CTA Mobile -->
-  <a class="sticky-cta" href="https://pay.hotmart.com/F95869280D?checkoutMode=10" target="_blank" rel="noopener" data-cta="sticky_checkout">
-    COMPRAR • R$ 29,90
-  </a>
+<div class="divider"></div>
 
-  <!-- Tracking de cliques (GA4) -->
-  <script>
-    (function () {
-      function trackCtaClick(name) {
-        try {
-          gtag('event', 'cta_click', {
-            cta_name: name || 'unknown',
-            page_location: window.location.href
-          });
-        } catch (e) {}
-      }
+<!-- ══ PROOF STRIP ═══════════════════════════════════ -->
+<div class="proof-strip">
+  <div class="proof-inner">
+    <div class="proof-stat">
+      <strong>7</strong>
+      <span>Passos práticos</span>
+    </div>
+    <div class="proof-sep"></div>
+    <div class="proof-stat">
+      <strong>30</strong>
+      <span>Dias de cronograma</span>
+    </div>
+    <div class="proof-sep"></div>
+    <div class="proof-stat">
+      <strong>3</strong>
+      <span>Bônus inclusos</span>
+    </div>
+    <div class="proof-sep"></div>
+    <div class="proof-stat">
+      <strong>7 dias</strong>
+      <span>De garantia total</span>
+    </div>
+  </div>
+</div>
 
-      document.querySelectorAll('[data-cta]').forEach(function(el){
-        el.addEventListener('click', function(){
-          trackCtaClick(el.getAttribute('data-cta'));
-        });
-      });
-    })();
-  </script>
+<!-- ══ PAIN ═══════════════════════════════════════════ -->
+<section class="section pain-section" id="para-voce">
+  <div class="section-inner">
+    <span class="section-label">Você se identifica?</span>
+    <h2 class="section-title">Isso é pra você se…</h2>
+    <div class="gold-line" style="margin-bottom:44px;"></div>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="icon">😶</div>
+        <p>Você ora, mas sente que as palavras ficam no teto — sem profundidade, sem direção.</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon">😰</div>
+        <p>A ansiedade pesa, a mente acelera, e você quer encontrar paz real em Deus.</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon">📅</div>
+        <p>Você começa com vontade, mas a constância não dura — e a culpa fica.</p>
+      </div>
+      <div class="pain-card">
+        <div class="icon">🤷</div>
+        <p>Você quer orar com propósito, fé e perseverança — e não sabe por onde começar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STEPS ══════════════════════════════════════════ -->
+<section class="section steps-section" id="conteudo">
+  <div class="section-inner">
+    <span class="section-label">O que está dentro</span>
+    <h2 class="section-title" style="color:#fff;">Os 7 Passos que vão transformar sua oração</h2>
+    <div class="gold-line" style="margin-bottom:44px;"></div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-num">1</span>
+        <span class="step-tag">Fundamento</span>
+        <h3>A Importância da Oração na Vida Cristã</h3>
+        <p>Entenda por que orar não é obrigação religiosa — é o canal do relacionamento com Deus.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">2</span>
+        <span class="step-tag">Direção</span>
+        <h3>Tenha um Propósito Claro ao Orar</h3>
+        <p>Pare de fazer orações genéricas. Aprenda a orar com intenção, clareza e foco.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">3</span>
+        <span class="step-tag">Confiança</span>
+        <h3>Orando com Fé e Confiança</h3>
+        <p>Descubra como a dúvida bloqueia respostas — e como orar como a mulher que tocou o manto de Jesus.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">4</span>
+        <span class="step-tag">Força</span>
+        <h3>Mantenha a Persistência na Oração</h3>
+        <p>Elias orou sete vezes antes de ver a nuvem. Você aprenderá a não desistir antes da resposta.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">5</span>
+        <span class="step-tag">Transformação</span>
+        <h3>Oração com Ação de Graças e Adoração</h3>
+        <p>Como Paulo e Silas na prisão: a gratidão muda o ambiente espiritual ao seu redor.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">6</span>
+        <span class="step-tag">Discernimento</span>
+        <h3>Peça a Deus Sabedoria e Discernimento</h3>
+        <p>Ore como Salomão — pedindo a Deus que guie suas decisões grandes e pequenas.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">7</span>
+        <span class="step-tag">Profundidade</span>
+        <h3>A Oração com o Espírito Santo</h3>
+        <p>Quando não há palavras, o Espírito intercede. Aprenda a convidá-Lo para guiar cada oração.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SCHEDULE PREVIEW ══════════════════════════════ -->
+<section class="section sched-section">
+  <div class="section-inner">
+    <span class="section-label">Exclusivo nesta edição</span>
+    <h2 class="section-title">Cronograma de 30 Dias incluso</h2>
+    <p class="section-sub">Cada dia tem uma ação específica e progressiva. Sem achismos — você sabe exatamente o que fazer amanhã.</p>
+
+    <div class="sched-weeks">
+      <div class="sched-week sw1">
+        <div class="sched-week-head">Semana 1 — Dias 1 a 7</div>
+        <div class="sched-week-body">
+          <span class="sched-focus">Fundamento e Propósito</span>
+          <p>Ore com gratidão antes de pedir</p>
+          <p>Escreva suas petições com clareza</p>
+          <p>Use o Pai Nosso como roteiro vivo</p>
+          <p>Ore em voz alta — sem filtro</p>
+        </div>
+      </div>
+      <div class="sched-week sw2">
+        <div class="sched-week-head">Semana 2 — Dias 8 a 14</div>
+        <div class="sched-week-body">
+          <span class="sched-focus">Fé e Persistência</span>
+          <p>Declare fé em voz alta</p>
+          <p>Confesse a dúvida com honestidade</p>
+          <p>Ore 3 vezes ao dia pelo mesmo pedido</p>
+          <p>Escreva uma carta de fé a Deus</p>
+        </div>
+      </div>
+      <div class="sched-week sw3">
+        <div class="sched-week-head">Semana 3 — Dias 15 a 21</div>
+        <div class="sched-week-body">
+          <span class="sched-focus">Gratidão e Sabedoria</span>
+          <p>Liste 10 gratidões antes de pedir</p>
+          <p>Ore com música de adoração</p>
+          <p>Peça sabedoria para decisões reais</p>
+          <p>Ore pelo Salmo 100 inteiro</p>
+        </div>
+      </div>
+      <div class="sched-week sw4">
+        <div class="sched-week-head">Semana 4 — Dias 22 a 30</div>
+        <div class="sched-week-body">
+          <span class="sched-focus">Espírito Santo e Integração</span>
+          <p>Convide o Espírito antes de orar</p>
+          <p>Silêncio de 10 min — só ouça</p>
+          <p>Ore os 7 passos em sequência</p>
+          <p>Oração livre — tudo que aprendeu</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══════════════════════════════════ -->
+<section class="section testi-section">
+  <div class="section-inner">
+    <span class="section-label">O que estão dizendo</span>
+    <h2 class="section-title">Quem já aplicou os passos</h2>
+    <div class="gold-line" style="margin-bottom:44px;"></div>
+
+    <div class="testi-grid">
+      <!-- SLOT: adicione depoimentos reais aqui -->
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>Eu orava por obrigação há anos. Depois do Passo 2, aprendi o que significa ter um propósito de verdade. Minha oração mudou completamente.</blockquote>
+        <div class="testi-name">Ana C.</div>
+        <div class="testi-loc">São Paulo, SP</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>O cronograma de 30 dias foi o que me faltava. Finalmente sei o que fazer todo dia — sem culpa, sem improviso.</blockquote>
+        <div class="testi-name">Marcos R.</div>
+        <div class="testi-loc">Goiânia, GO</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <blockquote>Sentia que Deus estava distante. O Passo 7 — orar com o Espírito Santo — transformou o jeito que me conecto com Ele.</blockquote>
+        <div class="testi-name">Juliana M.</div>
+        <div class="testi-loc">Belo Horizonte, MG</div>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:28px;font-size:.82rem;color:#b0a090;font-style:italic;">
+      * Substitua por depoimentos reais dos seus leitores para máxima conversão.
+    </p>
+  </div>
+</section>
+
+<!-- ══ BONUS ══════════════════════════════════════════ -->
+<section class="section bonus-section">
+  <div class="section-inner">
+    <span class="section-label">Bônus Inclusos</span>
+    <h2 class="section-title">Você leva 3 guias extras sem custo adicional</h2>
+    <p class="section-sub">Materiais complementares para fortalecer sua paz, fé e caminhada espiritual.</p>
+
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <img src="images/ebook-mockup.png" alt="Cura e Transformação pela Música Divina">
+        <h3>Cura e Transformação pela Música Divina</h3>
+        <p>Como usar a música inspirada por Deus para acalmar a mente e restaurar emoções.</p>
+        <span class="bonus-value">✦ Bônus Gratuito</span>
+      </div>
+      <div class="bonus-card">
+        <img src="images/bonus2.png" alt="Encontrando Paz em Tempos de Tribulação">
+        <h3>Encontrando Paz em Tempos de Tribulação</h3>
+        <p>Fundamentos bíblicos para manter a fé firme mesmo nos momentos mais difíceis.</p>
+        <span class="bonus-value">✦ Bônus Gratuito</span>
+      </div>
+      <div class="bonus-card">
+        <img src="images/bonus1.png" alt="Descubra Sua Verdadeira Felicidade">
+        <h3>Descubra Sua Verdadeira Felicidade</h3>
+        <p>Guia de gratidão e hábitos para fortalecer o que realmente sustenta a alma.</p>
+        <span class="bonus-value">✦ Bônus Gratuito</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ OFFER ══════════════════════════════════════════ -->
+<section class="section offer-section" id="oferta">
+  <div class="section-inner">
+    <div class="offer-box">
+      <span class="section-label">Oferta Especial</span>
+      <h2 class="section-title">Tudo que você leva hoje</h2>
+      <div class="gold-line" style="margin: 16px auto 28px;"></div>
+
+      <ul class="offer-includes">
+        <li><strong>E-book principal:</strong> 7 Passos para Melhorar sua Vida de Oração</li>
+        <li><strong>Cronograma de 30 Dias</strong> com ações diárias práticas e progressivas</li>
+        <li><strong>Bônus 1:</strong> Cura e Transformação pela Música Divina</li>
+        <li><strong>Bônus 2:</strong> Encontrando Paz em Tempos de Tribulação</li>
+        <li><strong>Bônus 3:</strong> Descubra Sua Verdadeira Felicidade</li>
+        <li><strong>Acesso imediato</strong> pela plataforma Hotmart</li>
+      </ul>
+
+      <div class="price-area">
+        <div class="price-was">De R$ 47,00</div>
+        <div class="price-now"><sup>R$</sup>29<sub>,90</sub></div>
+        <div class="price-note">Pagamento único • Acesso vitalício</div>
+      </div>
+
+      <div class="urgency">⚠️ Condição promocional — pode sair do ar a qualquer momento.</div>
+
+      <a
+        href="https://pay.hotmart.com/F95869280D?off=gh93ys7a&checkoutMode=10"
+        class="btn-offer"
+        data-cta="offer_main"
+        onclick="gtag('event','checkout_click',{event_category:'engagement',event_label:'botao_principal'});">
+        QUERO COMEÇAR HOJE — R$ 29,90
+      </a>
+
+      <p class="secure-row">🔒 Compra 100% segura via Hotmart • Acesso imediato após pagamento</p>
+
+      <div class="guarantee">
+        <strong>🛡 Garantia incondicional de 7 dias</strong>
+        <p>Se por qualquer motivo você não gostar, solicite reembolso total pela Hotmart. Sem perguntas, sem burocracia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ════════════════════════════════════════════ -->
+<section class="section faq-section">
+  <div class="section-inner">
+    <span class="section-label">Dúvidas</span>
+    <h2 class="section-title">Perguntas frequentes</h2>
+    <div class="gold-line" style="margin-bottom:40px;"></div>
+
+    <div class="faq-list">
+      <details>
+        <summary>Como vou receber o material?</summary>
+        <p>Após a compra, a Hotmart envia o acesso imediatamente por e-mail e libera na plataforma deles. Você acessa em qualquer dispositivo.</p>
+      </details>
+      <details>
+        <summary>Funciona se eu tiver pouco tempo?</summary>
+        <p>Sim. O cronograma de 30 dias é feito para 10 a 20 minutos por dia. Você não precisa de longos períodos — precisa de consistência.</p>
+      </details>
+      <details>
+        <summary>Preciso ter experiência para orar?</summary>
+        <p>Não. O guia começa do zero e serve tanto para quem nunca teve constância quanto para quem quer aprofundar sua oração.</p>
+      </details>
+      <details>
+        <summary>É material cristão?</summary>
+        <p>Sim. Todo o conteúdo é fundamentado na Bíblia, com linguagem simples, prática e acessível a qualquer cristão.</p>
+      </details>
+      <details>
+        <summary>E se eu não gostar?</summary>
+        <p>Você tem 7 dias de garantia total pela Hotmart. Solicite o reembolso e recebe 100% de volta. Sem riscos.</p>
+      </details>
+      <details>
+        <summary>Isso é diferente de outros materiais sobre oração?</summary>
+        <p>A diferença está no cronograma de 30 dias — em vez de só explicar o que fazer, o guia te diz exatamente o que praticar cada dia, de forma progressiva.</p>
+      </details>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;">
+      <a href="#oferta" class="btn-primary" data-cta="faq_cta">QUERO GARANTIR O MEU AGORA</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Sons do Espírito. Todos os direitos reservados.</p>
+</footer>
+
+<!-- STICKY MOBILE -->
+<a class="sticky-cta" href="https://pay.hotmart.com/F95869280D?off=gh93ys7a&checkoutMode=10"
+   target="_blank" rel="noopener" data-cta="sticky_checkout"
+   onclick="gtag('event','checkout_click',{event_category:'engagement',event_label:'sticky'});">
+  COMPRAR AGORA — R$ 29,90
+</a>
+
+<script>
+  (function(){
+    function track(name){
+      try{ gtag('event','cta_click',{cta_name:name||'unknown',page_location:window.location.href}); }catch(e){}
+    }
+    document.querySelectorAll('[data-cta]').forEach(function(el){
+      el.addEventListener('click',function(){ track(el.getAttribute('data-cta')); });
+    });
+  })();
+</script>
 
 </body>
 </html>
-
-
-
-
-
