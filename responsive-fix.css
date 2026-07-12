@@ -1,0 +1,9 @@
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+main,.hero-grid,.hero-copy,.split>*{min-width:0}
+@media(max-width:620px){
+  .hero h1{max-width:100%;font-size:clamp(2.1rem,11vw,2.55rem);overflow-wrap:normal}
+  .hero-copy,.eyebrow,.hero-lead,.micro{max-width:100%}
+  .eyebrow{letter-spacing:1.8px}
+  .hero-points{max-width:100%}
+  .book-stage{width:100%}
+}
