@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 794 1123" role="img" aria-labelledby="t d">
+<title id="t">7 Dias na Presença de Deus</title>
+<desc id="d">Capa premium do devocional Sons do Espírito</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#061f29"/><stop offset=".55" stop-color="#0c3540"/><stop offset="1" stop-color="#071d25"/></linearGradient>
+ <radialGradient id="sun" cx="50%" cy="69%" r="42%"><stop stop-color="#fff3c4" stop-opacity=".95"/><stop offset=".18" stop-color="#e5b85d" stop-opacity=".72"/><stop offset=".62" stop-color="#c88e31" stop-opacity=".12"/><stop offset="1" stop-color="#c88e31" stop-opacity="0"/></radialGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9a6c27"/><stop offset=".5" stop-color="#efd38c"/><stop offset="1" stop-color="#a8752b"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="794" height="1123" fill="url(#bg)"/>
+<circle cx="397" cy="760" r="340" fill="url(#sun)"/>
+<g opacity=".26" stroke="#efd38c" stroke-width="2">
+ <path d="M397 736 L50 430"/><path d="M397 736 L145 350"/><path d="M397 736 L275 310"/><path d="M397 736 L397 260"/><path d="M397 736 L520 310"/><path d="M397 736 L650 350"/><path d="M397 736 L744 430"/>
+</g>
+<path d="M0 790 L130 700 230 760 335 650 430 740 545 620 650 700 794 580 794 1123 0 1123Z" fill="#09232d" opacity=".92"/>
+<path d="M0 870 L120 800 245 850 350 760 470 850 605 720 794 825 794 1123 0 1123Z" fill="#061922" opacity=".88"/>
+<path d="M397 725 C365 790 330 860 355 930 C375 985 405 1020 397 1123" fill="none" stroke="#e6bc64" stroke-width="18" opacity=".26" filter="url(#glow)"/>
+<path d="M397 725 C365 790 330 860 355 930 C375 985 405 1020 397 1123" fill="none" stroke="#f7dda0" stroke-width="3" opacity=".78"/>
+<rect x="35" y="35" width="724" height="1053" rx="4" fill="none" stroke="url(#gold)" stroke-width="2" opacity=".72"/>
+<rect x="53" y="53" width="688" height="1017" rx="3" fill="none" stroke="#b88a3c" stroke-width="1" opacity=".4"/>
+<g text-anchor="middle">
+ <text x="397" y="120" fill="#dfbf73" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="4">SONS DO ESPÍRITO APRESENTA</text>
+ <line x1="265" y1="149" x2="529" y2="149" stroke="#bf9143" opacity=".7"/><circle cx="397" cy="149" r="4" fill="#e6c575"/>
+ <rect x="278" y="177" width="238" height="50" rx="2" fill="#0d303a" stroke="#d3ad5e"/>
+ <text x="397" y="209" fill="#e8ca7f" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">EDIÇÃO PREMIUM</text>
+ <text x="397" y="355" fill="url(#gold)" font-family="Georgia, serif" font-size="105" font-weight="700">7 Dias</text>
+ <text x="397" y="425" fill="#f9f4e8" font-family="Georgia, serif" font-size="48">na</text>
+ <text x="397" y="515" fill="#f9f4e8" font-family="Georgia, serif" font-size="68" font-weight="700">Presença de Deus</text>
+ <text x="397" y="578" fill="#e6eceb" font-family="Arial, sans-serif" font-size="21">Uma jornada guiada de oração, descanso e esperança para</text>
+ <text x="397" y="608" fill="#e6eceb" font-family="Arial, sans-serif" font-size="21">aquietar o coração e aprofundar sua comunhão com Deus.</text>
+ <circle cx="397" cy="730" r="10" fill="#fff0ba"/><circle cx="397" cy="730" r="30" fill="#f4c86b" opacity=".12"/>
+ <rect x="88" y="945" width="618" height="93" rx="12" fill="#0c3440" stroke="#b68a3e" opacity=".96"/>
+ <text x="397" y="980" fill="#f8f0db" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1">UMA EXPERIÊNCIA DEVOCIONAL PARA OUVIR, ORAR E DESCANSAR</text>
+ <text x="397" y="1015" fill="#dfb85f" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">7 DIAS GUIADOS • DIÁRIO ESPIRITUAL • RITUAIS COM MÚSICA • 5 BÔNUS</text>
+</g>
+</svg>
