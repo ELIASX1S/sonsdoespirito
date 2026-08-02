@@ -1,0 +1,44 @@
+name: Publicar site no GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar página para produção
+        run: |
+          sed -i 's#https://sonsdoespirito.store/#https://sonsdoespirito.online/#g' index.html
+          sed -i 's#assets/capa-devocional.png#assets/capa-devocional.svg#g' index.html
+          sed -i 's#clamp(2.6rem,5.2vw,5.35rem)#clamp(2.6rem,4.7vw,4.85rem)#g' index.html
+          touch .nojekyll
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar arquivos do site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4
